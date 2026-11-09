@@ -49,6 +49,7 @@ function clearCache(){
       `${GetPageVariable("EditCompTbl")}|||${GetPageVariable("EditCompKey")}|||${GetPageVariable("EditCompVal")}|||${GetPageVariable("SystemUserID")}|||${GetPageVariable("ctxPrimaryKeyValue")}`
    localStorage.removeItem(recID.toUpperCase());
    restoreClicked = false;
+   startCache = true;
 }
 function cacheData(){
    if(GetPageVariable("ctxPrimaryKeyValue")!=="" && startCache){
